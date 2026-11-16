@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.omer</groupId>
-    <artifactId>ComebackShop</artifactId>
-    <version>1.0.0</version>
+    <artifactId>Shopcomeback</artifactId>
+    <version>1.1.0</version>
 
     <properties>
         <java.version>21</java.version>
