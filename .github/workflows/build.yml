@@ -1,0 +1,29 @@
+name: Build Shopcomeback
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodları Çek
+        uses: actions/checkout@v4
+
+      - name: Java 21 Kur
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Maven ile Derle
+        run: mvn clean package
+
+      - name: JAR Dosyasını Yükle
+        uses: actions/upload-artifact@v4
+        with:
+          name: Shopcomeback-Plugin
+          path: target/Shopcomeback-*.jar
