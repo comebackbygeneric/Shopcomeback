@@ -1,0 +1,17 @@
+name: Shopcomeback
+version: 1.1.0
+main: me.omer.shopcomeback.Shopcomeback
+api-version: '1.21'
+commands:
+  ihale:
+    description: İhale pazarını açar veya eşya satar.
+    aliases: [ah, auction]
+    usage: /ihale [sell <fiyat>]
+  para:
+    description: Bakiyeni gösterir.
+    aliases: [bakiye, money]
+    usage: /para
+  paragonder:
+    description: Başka bir oyuncuya para gönderir.
+    aliases: [pay, paragonder]
+    usage: /pay <oyuncu> <miktar>
